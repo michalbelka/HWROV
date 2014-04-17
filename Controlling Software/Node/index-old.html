@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/boilerplate.css" />
+    <link rel="stylesheet" href="/reflow.css" />
+    <script src="/jquery-2.1.0.min.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="gyro.min.js"></script>
+    <script src="general.js"></script>
+    <script src="/modes.js"></script>
+    <script src="mobile_modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  </head>
+
+  <body>
+    <div id="primaryContainer" class="primaryContainer clearfix">
+      <div id='box' class='clearfix'>
+      <p id='text'>Mode: <span id='mode-fast' class="selected-mode modes">Fast</span> <span id="mode-agile" class="modes">Agile</span></p>
+      <div id='box1' class='clearfix'></div>
+      <p id='text1'>
+      90 %
+      </p>
+      <div id='box2' class='clearfix'>
+      </div>
+      </div>
+      <div id='box3' class='clearfix'>
+      <img src="" alt="Stream" />
+      </div>
+      <div id='box4' class='clearfix'>
+      </div>
+      <div id='box5' class='clearfix'>
+      <p id='motor_vertical_front'>
+      0 %
+      </p>
+      <p id='motor_vertical_rear'>
+      0 %
+      </p>
+      <p id='motor_right'>
+      100 %
+      </p>
+      <p id='motor_left'>
+      100 %
+      </p>
+      </div>
+    </div>
+
+    <img src="img/gyro-icon.png" id="gyro" style="position: fixed; bottom: 5px; right: 5px; width: 128px;">
+  </body>
+</html>

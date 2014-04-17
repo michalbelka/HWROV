@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>ROV Control</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index.css">
+  
+  <script src="js/jquery-min.js"></script>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/gyro.min.js"></script>
+  <script src="js/general.js"></script>
+  <script src="js/modes.js"></script>
+  <script src="js/mobile_modes.js"></script>
+
+  <!-- Intro.js -->
+  <script src="js/intro.min.js"></script>
+  <link rel="stylesheet" href="css/introjs.min.css">
+
+</head>
+<body class="body index clearfix">
+  <div class="upper-menu" >
+    <p data-step="1"
+       data-position="right"
+       data-intro="Modes allows you to change ROV behaviour! If you choose 'fast' it will go as fast as possible, while in 'agile' it will move only 50% speed and rotate in place when turning"
+       class="modes">Modes: <span id="fast-mode" class="active">Fast</span> <span id="agile-mode">Agile</span></p>
+    <img class="guide" src="images/help.png">
+    <img data-step="2"
+         data-position="left"
+         data-intro="Click this button to emerge ROV. You no longer have to keep key pressed!"
+         class="emerge" src="images/emerge.png">
+    <img data-step="3"
+         data-position="left"
+         data-intro="When you are done with ROV, you can turn off Pi with tis button. Note that to turn it on again, you have to switch power."
+         class="off" src="images/off.png">
+    <img data-step="4"
+         data-position="left"
+         data-intro="Tap on this icon to start using accelerometer."
+         class="gyro" id="gyro" src="images/gyro-icon.png">
+  </div>
+
+  <div class="container clearfix">
+    <img src="images/video placeholder.png" class="video"></img>
+    <div data-step="5"
+         data-position="left"
+         data-intro="Click/tap on any text value to change given motor speed (values in range -100 - 100).<br><br>
+         To control ROV, use arrow keys, <em>d</em> to go down and <em>e</em> to emerge."
+         class="element clearfix">
+      <p class="motors mfront">0 %</p>
+      <p class="motors mleft">0 %</p>
+      <p class="motors mrear">0 %</p>
+      <p class="motors mright">0 %</p>
+    </div>
+  </div>
+</body>
+</html>

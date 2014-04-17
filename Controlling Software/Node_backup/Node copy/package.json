@@ -1,0 +1,21 @@
+{
+    "name": "HWROV",
+    "version": "0.0.1",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+        "express": "~3.4.8",
+        "socket.io": "~0.9.16"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "Michal Belka",
+    "license": "ISC",
+
+    "engines": {
+        "node": "0.10.x"
+    }
+}
